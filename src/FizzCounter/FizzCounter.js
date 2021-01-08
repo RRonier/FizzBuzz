@@ -9,13 +9,25 @@ export default function FizzCounter ()
         setCount(count + 1)
     }
 
+    const restCounter = () =>
+    {
+        setCount(count - 1)
+    }
+
     return (
         <div>
             <div>
                 <button
                     data-testid="addButton"
                     disabled={count === 100}
-                    onClick={addCounter}>Add</button>
+                    onClick={addCounter}>
+                    Add
+                </button>
+                <button
+                    disabled={count === 1}
+                    onClick={restCounter}>
+                    Rest
+                </button>
             </div>
             <div>
                 <p data-testid="count">{FizzBuzz(count)}</p>
