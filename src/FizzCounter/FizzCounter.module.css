@@ -1,0 +1,40 @@
+.element {
+    width: 230px;
+    height: 60px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.button {
+    text-decoration: none;
+    padding: 10px;
+    margin: 2px;
+    font-weight: 600;
+    font-size: 20px;
+    color: #ffffff;
+    background-color: #1883ba;
+    border-radius: 6px;
+    border: 2px solid #0016b0;
+}
+
+button:hover {
+    background-color: #ffffff;
+    color: red;
+}
+
+button:disabled {
+    background-color: red;
+    color: white;
+    border: transparent;
+}
+
+button:checked {
+    background-color: violet;
+    color: yellow;
+}
+
+.result {
+    font-size: 30px;
+    font-family: cursive
+}
