@@ -8,5 +8,9 @@ export const FizzBuzz = (num) =>
     {
         return 'Fizz'
     }
+    if (num % 5 === 0 && num % 3 !== 0)
+    {
+        return 'Buzz'
+    }
     return num
 }
