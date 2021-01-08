@@ -14,6 +14,11 @@ export default function FizzCounter ()
         setCount(count - 1)
     }
 
+    const reset = () =>
+    {
+        setCount(1)
+    }
+
     return (
         <div>
             <div>
@@ -27,6 +32,11 @@ export default function FizzCounter ()
                     disabled={count === 1}
                     onClick={restCounter}>
                     Rest
+                </button>
+                <button
+                    disabled={count === 1}
+                    onClick={reset}>
+                    Reset
                 </button>
             </div>
             <div>
