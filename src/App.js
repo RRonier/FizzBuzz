@@ -5,7 +5,7 @@ import FizzCounter from './FizzCounter/FizzCounter'
 function App() {
   return (
     <div className="container">
-      <h1>FizzBuzz example upgraded</h1>
+      <h1 className="header">FizzBuzz example upgraded</h1>
       <FizzCounter />
     </div>
   )
