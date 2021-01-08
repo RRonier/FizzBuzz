@@ -1,5 +1,8 @@
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
 
+Just a little implementation of FizzBuzz using react. It's like a counter app, when you click the "Add" button it counts forward, when you click the "Rest" button it counts backward. If you click the "Reset" button, it reset the counter.
+It could looks like a simple counter app, but it evaluates the number counted and prints Fizz if the number is divisible by 3, Buzz if it is divisible by 5 or FizzBuzz if it is divisible by 3 and 5.
+
 ## Available Scripts
 
 In the project directory, you can run:
