@@ -26,3 +26,12 @@ it('should return Fizz if the number is divisible by 3', () =>
     expect(FizzBuzz(9)).toBe('Fizz')
     expect(FizzBuzz(12)).toBe('Fizz')
 })
+
+it('should return Buzz if the number is divisible by 5', () =>
+{
+    expect(FizzBuzz(5)).toBe('Buzz')
+    expect(FizzBuzz(10)).toBe('Buzz')
+    expect(FizzBuzz(20)).toBe('Buzz')
+    expect(FizzBuzz(25)).toBe('Buzz')
+    expect(FizzBuzz(35)).toBe('Buzz')
+})
