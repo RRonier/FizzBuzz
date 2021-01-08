@@ -21,3 +21,10 @@ it('should decrese the count by one when the user clicks the button Rest', () =>
     fireEvent.click(getByText("Rest"))
     expect(getByTestId("count")).toHaveTextContent("1")
 })
+
+it('should reset the count to one when the user clicks the button Reset', () =>
+{
+    const {getByTestId, getByText} = render(<FizzCounter />)
+    fireEvent.click(getByText("Reset"))
+    expect(getByTestId("count")).toHaveTextContent("1")
+})
