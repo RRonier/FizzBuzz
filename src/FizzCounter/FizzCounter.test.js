@@ -14,3 +14,10 @@ it('should increse the count by one when the user clicks the button Add', () =>
     fireEvent.click(getByText("Add"))
     expect(getByTestId("count")).toHaveTextContent("2")
 })
+
+it('should decrese the count by one when the user clicks the button Rest', () =>
+{
+    const {getByTestId, getByText} = render(<FizzCounter />)
+    fireEvent.click(getByText("Rest"))
+    expect(getByTestId("count")).toHaveTextContent("1")
+})
