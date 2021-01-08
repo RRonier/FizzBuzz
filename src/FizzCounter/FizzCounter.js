@@ -1,5 +1,7 @@
 import React, {useState} from 'react'
 import {FizzBuzz} from 'utils/FizzBuzz'
+import style from 'FizzCounter/FizzCounter.module.css'
+
 export default function FizzCounter ()
 {
     const [count, setCount] = useState(1)
@@ -23,24 +25,26 @@ export default function FizzCounter ()
         <div>
             <div>
                 <button
-                    data-testid="addButton"
+                    className={style.button}
                     disabled={count === 100}
                     onClick={addCounter}>
                     Add
                 </button>
                 <button
+                    className={style.button}
                     disabled={count === 1}
                     onClick={restCounter}>
                     Rest
                 </button>
                 <button
+                    className={style.button}
                     disabled={count === 1}
                     onClick={reset}>
                     Reset
                 </button>
             </div>
-            <div>
-                <p data-testid="count">{FizzBuzz(count)}</p>
+            <div className={style.element}>
+                <p data-testid="count" className={style.result}>{FizzBuzz(count)}</p>
             </div>
         </div>
     )
